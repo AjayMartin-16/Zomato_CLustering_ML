@@ -1,93 +1,74 @@
-Zomato Restaurant Clustering and Sentiment Analysis
+# Zomato Restaurant Clustering and Sentiment Analysis
 
-Project Overview
+## Project Overview
 
 This project focuses on analyzing Zomato restaurant data to identify meaningful clusters and perform sentiment analysis on customer reviews. The objective is to gain insights into restaurant groupings based on various attributes and understand customer sentiments using Natural Language Processing (NLP) techniques.
 
-Datasets Used
+## Datasets Used
 
-Zomato Restaurant Names and Metadata.csv - Contains restaurant details such as name, location, rating, price range, cuisine type, and other metadata.
+1. **Zomato Restaurant Names and Metadata.csv** - Contains restaurant details such as name, location, rating, price range, cuisine type, and other metadata.
+2. **Zomato Restaurant Reviews.csv** - Includes customer reviews and ratings given to different restaurants.
 
-Zomato Restaurant Reviews.csv - Includes customer reviews and ratings given to different restaurants.
+## Objectives
 
-Objectives
+- Perform Exploratory Data Analysis (EDA) to understand the dataset.
+- Implement clustering techniques to categorize restaurants.
+- Conduct sentiment analysis on customer reviews.
+- Visualize key findings using data visualization techniques.
 
-Perform Exploratory Data Analysis (EDA) to understand the dataset.
+## Methodology
 
-Implement clustering techniques to categorize restaurants.
+### 1. Data Preprocessing
 
-Conduct sentiment analysis on customer reviews.
+- Checked for missing values and handled them appropriately.
+- Converted categorical features into numerical values using encoding.
+- Standardized and normalized numerical features.
 
-Visualize key findings using data visualization techniques.
+### 2. Exploratory Data Analysis (EDA)
 
-Methodology
+- Performed univariate, bivariate, and multivariate analysis.
+- Visualized distributions, correlations, and trends in the data.
 
-1. Data Preprocessing
+### 3. Clustering Restaurants
 
-Checked for missing values and handled them appropriately.
+- Applied **K-Means Clustering** and **DBSCAN** to group similar restaurants based on attributes such as price, rating, and cuisine type.
+- Used the **Elbow Method** and **Silhouette Score** to determine the optimal number of clusters.
 
-Converted categorical features into numerical values using encoding.
+### 4. Sentiment Analysis on Customer Reviews
 
-Standardized and normalized numerical features.
+- Preprocessed text data (removal of stopwords, tokenization, and stemming).
+- Applied **VADER Sentiment Analysis** to classify reviews as Positive, Negative, or Neutral.
+- Used **WordCloud** to visualize frequent words in customer reviews.
 
-2. Exploratory Data Analysis (EDA)
+## Key Findings
 
-Performed univariate, bivariate, and multivariate analysis.
+- Restaurants were grouped into meaningful clusters based on price range and customer ratings.
+- Sentiment analysis showed a correlation between ratings and review polarity.
+- Visualization techniques helped uncover trends in popular cuisines and high-rated locations.
 
-Visualized distributions, correlations, and trends in the data.
+## Tools & Technologies Used
 
-3. Clustering Restaurants
+- **Programming Language:** Python
+- **Libraries:** Pandas, NumPy, Matplotlib, Seaborn, Scikit-Learn, NLTK, WordCloud
+- **Visualization:** Tableau (for additional insights)
+- **Machine Learning Techniques:** Clustering (K-Means, DBSCAN), NLP (VADER Sentiment Analysis)
 
-Applied K-Means Clustering and DBSCAN to group similar restaurants based on attributes such as price, rating, and cuisine type.
-
-Used the Elbow Method and Silhouette Score to determine the optimal number of clusters.
-
-4. Sentiment Analysis on Customer Reviews
-
-Preprocessed text data (removal of stopwords, tokenization, and stemming).
-
-Applied VADER Sentiment Analysis to classify reviews as Positive, Negative, or Neutral.
-
-Used WordCloud to visualize frequent words in customer reviews.
-
-Key Findings
-
-Restaurants were grouped into meaningful clusters based on price range and customer ratings.
-
-Sentiment analysis showed a correlation between ratings and review polarity.
-
-Visualization techniques helped uncover trends in popular cuisines and high-rated locations.
-
-Tools & Technologies Used
-
-Programming Language: Python
-
-Libraries: Pandas, NumPy, Matplotlib, Seaborn, Scikit-Learn, NLTK, WordCloud
-
-Visualization: Tableau (for additional insights)
-
-Machine Learning Techniques: Clustering (K-Means, DBSCAN), NLP (VADER Sentiment Analysis)
-
-Conclusion
+## Conclusion
 
 The project successfully provided insights into restaurant groupings and customer sentiments. The clustering model identified key patterns, while sentiment analysis highlighted the importance of reviews in shaping customer perceptions.
 
-Future Enhancements
+## Future Enhancements
 
-Implement Topic Modeling (LDA) for better review analysis.
+- Implement **Topic Modeling** (LDA) for better review analysis.
+- Improve clustering by incorporating **geographical coordinates**.
+- Use **deep learning-based NLP models** for enhanced sentiment classification.
 
-Improve clustering by incorporating geographical coordinates.
+## Author
 
-Use deep learning-based NLP models for enhanced sentiment classification.
+[Your Name]
 
-Author
+## Acknowledgments
 
-B. Ajay Martin Ferdinand
-
-
-Acknowledgments
-
-Data sourced from Zomato.
-
-Special thanks to AlmaBetter for providing guidance on data science methodologies.
+- Data sourced from Zomato.
+- Special thanks to AlmaBetter for providing guidance on data science methodologies.
 
