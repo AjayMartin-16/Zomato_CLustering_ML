@@ -65,7 +65,7 @@ The project successfully provided insights into restaurant groupings and custome
 
 ## Author
 
-[Your Name]
+B. Ajay Martin Ferdinand
 
 ## Acknowledgments
 
